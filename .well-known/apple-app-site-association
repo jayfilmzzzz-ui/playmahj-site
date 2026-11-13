@@ -1,0 +1,21 @@
+{
+ "applinks": {
+  "details": [
+   {
+    "appIDs": [
+     "9KYHVZNABZ.com.jayscrib.playmahj"
+    ],
+    "components": [
+     {
+      "/": "/p/*",
+      "comment": "a shared post"
+     },
+     {
+      "/": "/m/*",
+      "comment": "a shared meet"
+     }
+    ]
+   }
+  ]
+ }
+}
