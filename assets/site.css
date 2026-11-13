@@ -1,0 +1,36 @@
+@font-face{font-family:"Fraunces";src:url("/assets/Fraunces.ttf") format("truetype");font-weight:100 900;font-display:swap}
+@font-face{font-family:"Plus Jakarta Sans";src:url("/assets/PlusJakartaSans.ttf") format("truetype");font-weight:200 800;font-display:swap}
+:root{--ivory:#FBF2E1;--deep:#F3E8D2;--ink:#1C1512;--ink2:#5E544C;--green:#244D2E;--terra:#A84A2A;--line:rgba(28,21,18,.14)}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--ivory);color:var(--ink);font:17px/1.6 "Plus Jakarta Sans",-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif}
+a{color:var(--ink);text-underline-offset:3px}a:hover{color:var(--terra)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header.top{border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:72px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font:600 24px/1 "Fraunces",Georgia,serif;font-variation-settings:"SOFT" 60,"opsz" 60}
+.brand img{height:40px;width:auto;display:block}
+nav.main{display:flex;gap:22px;font-size:15px;font-weight:600}nav.main a{text-decoration:none;padding:12px 0}nav.main a[aria-current]{color:var(--green);text-decoration:underline}
+h1,h2,h3{font-family:"Fraunces",Georgia,serif;font-variation-settings:"SOFT" 60,"opsz" 60;font-weight:500;line-height:1.12;letter-spacing:-.01em;margin:0}
+h1{font-size:clamp(40px,7vw,68px)}h2{font-size:clamp(26px,3.6vw,34px)}h3{font-size:22px}
+main{padding:56px 0 80px}
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+.hero p.lead{font-size:20px;line-height:1.5;margin:20px 0 0;max-width:34em}
+.appicon{justify-self:center;width:min(280px,60vw);height:auto;border-radius:22.5%;display:block}
+.block{background:var(--green);color:var(--ivory);padding:36px 32px;border-radius:8px;margin-top:64px}
+.block h2{color:var(--ivory)}.block p{margin:12px 0 0;max-width:40em}.block a{color:var(--ivory)}
+.cols{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:64px;border-top:1px solid var(--line)}
+.cols section{padding:28px 28px 8px 0;border-right:1px solid var(--line)}.cols section+section{padding-left:28px}.cols section:last-child{border-right:0}
+.cols p{margin:10px 0 0;color:var(--ink2)}
+.doc{max-width:720px}.doc h1{font-size:clamp(34px,5.4vw,48px);margin-bottom:10px}.doc h2{margin:40px 0 10px}.doc p,.doc li{margin:0 0 12px}.doc ul{padding-left:22px}
+.doc strong{font-weight:700}.doc table{border-collapse:collapse;font-size:15px}.doc td,.doc th{border:1px solid var(--line);padding:6px 10px;text-align:left}
+.btn{display:inline-block;background:var(--ink);color:var(--ivory);text-decoration:none;font-weight:700;padding:14px 22px;border-radius:8px;min-height:50px}.btn:hover{color:var(--ivory);background:var(--green)}
+.card{border:1px solid var(--line);border-radius:8px;padding:28px;background:var(--ivory);max-width:640px}
+.card .who{display:flex;align-items:baseline;flex-wrap:wrap;gap:2px 12px;font-weight:700}.card .who .seal{font-size:14px;white-space:nowrap}.card .who .seal{color:var(--green)}
+.card .what{font-size:20px;line-height:1.5;margin:14px 0 0;white-space:pre-wrap;overflow-wrap:anywhere}
+.card .meta{color:var(--ink2);font-size:15px;margin:14px 0 0}
+.card h2{margin:0}
+.note{color:var(--ink2);font-size:15px;margin-top:22px;max-width:640px}
+footer.end{border-top:1px solid var(--line);color:var(--ink2);font-size:14px}footer.end .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:22px;padding-bottom:36px}
+footer.end a{color:var(--ink2);margin-right:16px}
+@media(max-width:760px){.hero{grid-template-columns:1fr;gap:36px}.cols{grid-template-columns:1fr}.cols section,.cols section+section{padding:22px 0 6px;border-right:0;border-bottom:1px solid var(--line)}.cols section:last-child{border-bottom:0}
+ main{padding:36px 0 60px}.block{padding:28px 22px;margin-top:44px}.cols{margin-top:44px}nav.main{gap:18px}}
