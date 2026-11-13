@@ -11,8 +11,16 @@
       "comment": "a shared post"
      },
      {
+      "/": "/p",
+      "comment": "a shared post, typed without the last slash"
+     },
+     {
       "/": "/m/*",
       "comment": "a shared meet"
+     },
+     {
+      "/": "/m",
+      "comment": "a shared meet, typed without the last slash"
      }
     ]
    }
